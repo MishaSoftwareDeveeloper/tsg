@@ -1,0 +1,15 @@
+<div #backContent class="backContent">
+
+  <div *ngFor="let sensor of sensors">
+    <img height = "{{sensor.ClipH}}"
+         width="{{sensor.ClipW}}"
+         src="../../assets/image_files/{{sensor.name}}.jpg"
+         useMap="#{{sensor.name}}">
+
+    <map name="{{sensor.name}}">
+      <area shape="rect" coords="{{sensor.x}},{{sensor.y}},{{sensor.ClipX}},{{sensor.ClipY}}"
+            alt="sensor.name" href="./assets/image_files/{{sensor.name}}.jpg">
+    </map>
+
+  </div>
+</div>

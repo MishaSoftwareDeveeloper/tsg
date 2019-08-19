@@ -1,0 +1,17 @@
+<p-toolbar styleClass="headerContent">
+  <div class="ui-toolbar-group-left">
+    <h4>Sensors</h4>
+  </div>
+  <div class="ui-toolbar-group-right">
+    <h5 id="backLabel">Background:</h5>
+    <p-colorPicker appendTo="body"
+                   styleClass="colorPicker"
+                   [(ngModel)]="backColor"
+                   (onChange)="onChangeColor($event)"></p-colorPicker>
+    <p-multiSelect appendTo="body"
+                   styleClass="multSelect"
+                   (onChange)="onSelect($event)"
+                   [options]="sensors"
+                   [panelStyle]="{minWidth:'15em'}"></p-multiSelect>
+  </div>
+</p-toolbar>

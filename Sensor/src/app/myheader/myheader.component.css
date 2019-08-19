@@ -1,0 +1,27 @@
+:host ::ng-deep .headerContent {
+  background-color: #c8c8c8;
+  border: unset !important;
+}
+
+
+:host ::ng-deep .multSelect {
+  min-width: 19em;
+}
+
+:host ::ng-deep .colorPicker {
+  display:inline-block;
+  float:left;
+  margin:4px 10px 0 0;
+ 
+
+}
+
+:host ::ng-deep .colorPicker .ui-inputtext {
+  padding: 0.2em !important;
+}
+
+  #backLabel {
+    display: inline-block;
+    margin: 5px 10px 0 0;
+    float: left;
+  }
